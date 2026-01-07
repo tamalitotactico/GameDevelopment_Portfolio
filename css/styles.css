@@ -379,6 +379,108 @@ section:nth-child(even) {
 }
 
 /* ==================== */
+/* NUEVO: CONTENEDOR PARA VIDEOS DE YOUTUBE */
+/* ==================== */
+
+.youtube-video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #000;
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Ajuste para mantener consistencia con videos locales */
+.project-media {
+  position: relative;
+}
+
+.project-media video,
+.youtube-video-container {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  border-radius: var(--radius-md);
+  background: #000;
+}
+
+/* Video local mantiene object-fit: cover */
+.project-media video {
+  object-fit: cover;
+}
+
+/* YouTube iframe no necesita object-fit */
+.youtube-video-container iframe {
+  object-fit: contain;
+}
+
+/* ==================== */
+/* NUEVO: ESTILOS PARA ENLACES DE YOUTUBE */
+/* ==================== */
+
+.links a.play-link {
+  background: #ff0000;
+  color: white;
+}
+
+.links a.play-link:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+}
+
+.links a.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: var(--color-border);
+}
+
+.links a.disabled:hover {
+  transform: none;
+  background: var(--color-border);
+  box-shadow: none;
+}
+
+/* ==================== */
+/* AJUSTES RESPONSIVE PARA YOUTUBE */
+/* ==================== */
+
+@media (max-width: 1024px) {
+  .project-media video,
+  .youtube-video-container {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-media video,
+  .youtube-video-container {
+    min-height: 250px;
+  }
+}
+
+/* ==================== */
+/* MEJORAS DE ACCESIBILIDAD PARA IFRAMES */
+/* ==================== */
+
+.youtube-video-container iframe:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+
+/* ==================== */
 /* SECCIÓN MÚSICA MEJORADA */
 /* ==================== */
 
