@@ -11,20 +11,22 @@
     <header id="hero">
       <!-- Video de fondo -->
       <div class="video-background">
-        <iframe
-          src="https://www.youtube.com/embed/XA8Kz-4u6dM
-      ?autoplay=1
-      &mute=1
-      &loop=1
-      &controls=0
-      &showinfo=0
-      &modestbranding=1
-      &playlist=XA8Kz-4u6dM"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-        ></iframe>
-
+        <video autoplay muted loop playsinline>
+          <source
+            src="assets/videos/GalaxyEatersGameplay.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="assets/videos/GalaxyEatersGameplay.mp4"
+            type="video/mp4"
+          />
+          <!-- Fallback para navegadores que no soportan video -->
+          <img
+            src="assets/images/hero-fallback.jpg"
+            alt="Background fallback"
+          />
+        </video>
+        <!-- Capa de overlay para opacidad -->
         <div class="video-overlay"></div>
       </div>
 
@@ -53,16 +55,19 @@
           <button class="carousel-btn prev">‹</button>
 
           <div class="carousel-track">
-            <!-- Project cards will be inserted here -->
-
-            <!-- Project 1 -->
+            <!-- Project 1 - Beggotten -->
             <article class="project-card">
               <div class="project-media">
-                <video
-                  src="assets/videos/BeggottenGameplay.mp4"
-                  controls
-                  muted
-                ></video>
+                <div class="youtube-video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/IlkwnmyeBDw"
+                    title="Beggotten Gameplay Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
               </div>
 
               <div class="project-info">
@@ -83,20 +88,30 @@
                 </ul>
 
                 <div class="links">
-                  <a href="#">Repository</a>
-                  <a href="#">Playable Build</a>
+                  <a href="#" class="repo-link">Repository</a>
+                  <a
+                    href="https://youtu.be/IlkwnmyeBDw"
+                    target="_blank"
+                    class="play-link"
+                    >Watch on YouTube</a
+                  >
                 </div>
               </div>
             </article>
 
-            <!-- Project 1 -->
+            <!-- Project 2 - Galaxy Eaters -->
             <article class="project-card">
               <div class="project-media">
-                <video
-                  src="assets/videos/GalaxyEatersGameplay.mp4"
-                  controls
-                  muted
-                ></video>
+                <div class="youtube-video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/XA8Kz-4u6dM"
+                    title="Galaxy Eaters Gameplay Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
               </div>
 
               <div class="project-info">
@@ -116,15 +131,21 @@
                 </ul>
 
                 <div class="links">
-                  <a href="#">Repository</a>
-                  <a href="#">Playable Build</a>
+                  <a href="#" class="repo-link">Repository</a>
+                  <a
+                    href="https://youtu.be/XA8Kz-4u6dM"
+                    target="_blank"
+                    class="play-link"
+                    >Watch on YouTube</a
+                  >
                 </div>
               </div>
             </article>
 
-            <!-- Project 1 -->
+            <!-- Project 3 - Recovery -->
             <article class="project-card">
               <div class="project-media">
+                <!-- Recovery video se mantiene local por ahora -->
                 <video src="assets/videos/recovery.mkv" controls muted></video>
               </div>
 
@@ -145,19 +166,25 @@
                 </ul>
 
                 <div class="links">
-                  <a href="#">Repository</a>
-                  <a href="#">Playable Build</a>
+                  <a href="#" class="repo-link">Repository</a>
+                  <a href="#" class="play-link">Playable Build</a>
                 </div>
               </div>
             </article>
 
+            <!-- Project 4 - Super Hexagon Reinforced -->
             <article class="project-card">
               <div class="project-media">
-                <video
-                  src="assets/videos/SuperHexagonReinforcedGameplay.mp4"
-                  controls
-                  muted
-                ></video>
+                <div class="youtube-video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/0y9vn5dZKfg"
+                    title="Super Hexagon Reinforced Gameplay Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
               </div>
 
               <div class="project-info">
@@ -178,8 +205,15 @@
                 </ul>
 
                 <div class="links">
-                  <a href="#">Repository</a>
-                  <a href="#">Playable Build</a>
+                  <a href="#" class="repo-link disabled"
+                    >Repository (Private)</a
+                  >
+                  <a
+                    href="https://youtu.be/0y9vn5dZKfg"
+                    target="_blank"
+                    class="play-link"
+                    >Watch on YouTube</a
+                  >
                 </div>
               </div>
             </article>
