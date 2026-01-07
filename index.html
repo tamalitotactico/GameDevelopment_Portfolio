@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NightWish — Gameplay Programmer</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header id="hero">
+      <!-- Video de fondo -->
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source
+            src="assets/videos/GalaxyEatersGameplay.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="assets/videos/GalaxyEatersGameplay.mp4"
+            type="video/mp4"
+          />
+          <!-- Fallback para navegadores que no soportan video -->
+          <img
+            src="assets/images/hero-fallback.jpg"
+            alt="Background fallback"
+          />
+        </video>
+        <!-- Capa de overlay para opacidad -->
+        <div class="video-overlay"></div>
+      </div>
+
+      <!-- Contenido del hero -->
+      <div class="hero-content">
+        <h1>NightWish</h1>
+        <h2>Game Developer</h2>
+        <p class="tagline">Game Feel · Control Systems · AI · Music</p>
+
+        <nav class="hero-nav">
+          <a href="#projects">Projects</a>
+          <a href="#music">Music</a>
+          <a href="#skills">Skills</a>
+          <a href="#recognition">Recognition</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="carousel projects-carousel">
+          <button class="carousel-btn prev">‹</button>
+
+          <div class="carousel-track">
+            <!-- Project cards will be inserted here -->
+
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-media">
+                <video
+                  src="assets/videos/BeggottenGameplay.mp4"
+                  controls
+                  muted
+                ></video>
+              </div>
+
+              <div class="project-info">
+                <h3>B E G G O T T E N</h3>
+                <p class="meta">Gameplay Programmer · Unity (C#)</p>
+
+                <p class="description">
+                  A horror game focused on the practical implementation of
+                  navigation meshes, volume management with URP, lighting, and
+                  basic shaders.
+                </p>
+
+                <ul class="highlights">
+                  <li>Visual realism with camera effects</li>
+                  <li>State control</li>
+                  <li>Navmeshes</li>
+                  <li>Volume and lighting | URP</li>
+                </ul>
+
+                <div class="links">
+                  <a href="#">Repository</a>
+                  <a href="#">Playable Build</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-media">
+                <video
+                  src="assets/videos/GalaxyEatersGameplay.mp4"
+                  controls
+                  muted
+                ></video>
+              </div>
+
+              <div class="project-info">
+                <h3>GALAXY EATERS</h3>
+                <p class="meta">Gameplay Programmer · Unity (C#)</p>
+
+                <p class="description">
+                  A progressive game with a variety of enemies, 
+                  weapons, projectiles, and bosses, a classic "bullet hell" with touches of "bullet heaven".
+                </p>
+
+                <ul class="highlights">
+                  <li>Object pooling</li>
+                  <li>Strategy Pattern Design and others</li>
+                  <li>Parameter tuning for feel</li>
+                </ul>
+
+                <div class="links">
+                  <a href="#">Repository</a>
+                  <a href="#">Playable Build</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-media">
+                <video src="assets/videos/recovery.mkv" controls muted></video>
+              </div>
+
+              <div class="project-info">
+                <h3>RECOVERY</h3>
+                <p class="meta">Gameplay Programmer · Unity (C#)</p>
+
+                <p class="description">
+                  A fast-paced action game with constant weapon changes 
+                  and speed, requiring strategy and reflexes, and featuring intelligent enemies.
+                </p>
+
+                <ul class="highlights">
+                  <li>Decision Trees</li>
+                  <li>State Machines</li>
+                  <li>Advanced Platformer Pathfinding</li>
+                </ul>
+
+                <div class="links">
+                  <a href="#">Repository</a>
+                  <a href="#">Playable Build</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <video
+                  src="assets/videos/SuperHexagonReinforcedGameplay.mp4"
+                  controls
+                  muted
+                ></video>
+              </div>
+
+              <div class="project-info">
+                <h3>SUPER HEXAGON REINFORCED</h3>
+                <p class="meta">Gameplay Programmer · Unity (C#)</p>
+
+                <p class="description">
+                  A practical implementation of the existing rhythm game "Super Hexagon," 
+                  created exclusively for educational purposes. Due to copyright restrictions, 
+                  neither the executable file nor the source code are being shared.
+                </p>
+
+                <ul class="highlights">
+                  <li>Geometry formulas for calculating sizes and vectors</li>
+                  <li>Rhythm detection with spectral analysis</li>
+                  <li>Event Triggers for aesthetic purposes</li>
+                </ul>
+
+                <div class="links">
+                  <a href="#">Repository</a>
+                  <a href="#">Playable Build</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-btn next">›</button>
+        </div>
+      </section>
+
+      <section id="music">
+        <div class="audio-production-label">Audio Production</div>
+        <h2>Music & Sound Design</h2>
+        <p class="section-intro">
+          Crafting immersive audio experiences with focus on rhythm, dynamic
+          looping and interactive feedback systems for games.
+        </p>
+
+        <div class="carousel music-carousel">
+          <button class="carousel-btn prev" aria-label="Previous track">
+            ‹
+          </button>
+
+          <div class="carousel-track">
+            <!-- Perfetto Distrutore -->
+            <article class="music-card">
+              <div class="music-image">
+                <img
+                  src="assets/images/v1_1.png"
+                  alt="Perfetto Distruttore cover art"
+                />
+                <div class="play-indicator">♪</div>
+              </div>
+              <h3>ULTRAKILL - Perfetto Distruttore</h3>
+
+              <!-- Waveform visualization -->
+              <div class="waveform">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+              </div>
+
+              <audio controls>
+                <source
+                  src="assets/audio/Ultrakill__Perfetto_Distruttore.wav"
+                  type="audio/mpeg"
+                />
+                Your browser does not support the audio element.
+              </audio>
+
+              <div class="music-meta">
+                <span class="duration">3:34</span>
+                <span class="genre">Combat / Emotional</span>
+                <span class="bitrate">180 bpm</span>
+              </div>
+
+              <p class="context">
+                High-intensity boss battle theme combining aggressive synthwave
+                with orchestral elements for maximum tension and player
+                immersion.
+              </p>
+
+              <div class="music-actions">
+                <button class="download-btn" aria-label="Download track">
+                  <span class="icon">⬇</span> Download
+                </button>
+                <button class="details-btn" aria-label="View track details">
+                  <span class="icon">ℹ</span> Details
+                </button>
+              </div>
+            </article>
+
+            <!-- Armour Mayhem -->
+            <article class="music-card">
+              <div class="music-image">
+                <img
+                  src="assets/images/recovery.png"
+                  alt="Recovery cover art"
+                />
+                <div class="play-indicator">♪</div>
+              </div>
+              <h3>Recovery - Armour Mayhem</h3>
+
+              <div class="waveform">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+              </div>
+
+              <audio controls>
+                <source
+                  src="assets/audio/RECOVERY__Armour_Mayhem.wav"
+                  type="audio/mpeg"
+                />
+                Your browser does not support the audio element.
+              </audio>
+
+              <div class="music-meta">
+                <span class="duration">3:33</span>
+                <span class="genre">Combat / Loop</span>
+                <span class="bitrate">320 bpm</span>
+              </div>
+
+              <p class="context">
+                High-energy combat track featuring pulsating synths and driving
+                percussion for fast-paced gameplay sequences.
+              </p>
+
+              <div class="music-actions">
+                <button class="download-btn" aria-label="Download track">
+                  <span class="icon">⬇</span> Download
+                </button>
+                <button class="details-btn" aria-label="View track details">
+                  <span class="icon">ℹ</span> Details
+                </button>
+              </div>
+            </article>
+
+            <!-- Unstoppable - AWWNE -->
+            <article class="music-card">
+              <div class="music-image">
+                <img
+                  src="assets/images/v1_2.png"
+                  alt="A World With No Evil cover art"
+                />
+                <div class="play-indicator">♪</div>
+              </div>
+              <h3>A World With No Evil - Unstoppable</h3>
+
+              <div class="waveform">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+              </div>
+
+              <audio controls>
+                <source
+                  src="assets/audio/Unstoppable__A_world_with_no_evil.mp3"
+                  type="audio/mpeg"
+                />
+                Your browser does not support the audio element.
+              </audio>
+
+              <div class="music-meta">
+                <span class="duration">3:24</span>
+                <span class="genre">Epic / Combat</span>
+                <span class="bitrate">240 bpm</span>
+              </div>
+
+              <p class="context">
+                Epic adventure theme with sweeping melodies and powerful
+                orchestration designed for heroic gameplay moments.
+              </p>
+
+              <div class="music-actions">
+                <button class="download-btn" aria-label="Download track">
+                  <span class="icon">⬇</span> Download
+                </button>
+                <button class="details-btn" aria-label="View track details">
+                  <span class="icon">ℹ</span> Details
+                </button>
+              </div>
+            </article>
+
+            <!-- CRACK THE SKIES - AWWNE -->
+            <article class="music-card">
+              <div class="music-image">
+                <img
+                  src="assets/images/earthmover.png"
+                  alt="CRACK THE SKIES cover art"
+                />
+                <div class="play-indicator">♪</div>
+              </div>
+              <h3>A World With No Evil - CRACK THE SKIES</h3>
+
+              <div class="waveform">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+              </div>
+
+              <audio controls>
+                <source
+                  src="assets/audio/CRACK_THE_SKIES__A_world_Without_Evil.mp3"
+                  type="audio/mpeg"
+                />
+                Your browser does not support the audio element.
+              </audio>
+
+              <div class="music-meta">
+                <span class="duration">1:25</span>
+                <span class="genre">Ambiental / Combat</span>
+                <span class="bitrate">180 bpm</span>
+              </div>
+
+              <p class="context">
+                Cinematic climax track with intense build-ups and emotional
+                payoff, perfect for story-driven game moments.
+              </p>
+
+              <div class="music-actions">
+                <button class="download-btn" aria-label="Download track">
+                  <span class="icon">⬇</span> Download
+                </button>
+                <button class="details-btn" aria-label="View track details">
+                  <span class="icon">ℹ</span> Details
+                </button>
+              </div>
+            </article>
+
+            <!-- Sacred Place - AWWNE -->
+            <article class="music-card">
+              <div class="music-image">
+                <img src="assets/images/light.png" alt="Sacred Place cover art" />
+                <div class="play-indicator">♪</div>
+              </div>
+              <h3>A World With No Evil - Sacred Place</h3>
+
+              <div class="waveform">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+              </div>
+
+              <audio controls>
+                <source src="assets/audio/Sacred_Place.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+
+              <div class="music-meta">
+                <span class="duration">1:50</span>
+                <span class="genre">Ambient / Atmospheric</span>
+                <span class="bitrate">90 bpm</span>
+              </div>
+
+              <p class="context">
+                Serene ambient track with ethereal textures and subtle melodies,
+                designed for exploration and calm gameplay segments.
+              </p>
+
+              <div class="music-actions">
+                <button class="download-btn" aria-label="Download track">
+                  <span class="icon">⬇</span> Download
+                </button>
+                <button class="details-btn" aria-label="View track details">
+                  <span class="icon">ℹ</span> Details
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-btn next" aria-label="Next track">›</button>
+        </div>
+
+        <!-- Carousel indicators will be added by JavaScript -->
+        <div
+          class="carousel-indicators"
+          role="tablist"
+          aria-label="Music tracks"
+        >
+          <!-- Indicators will be generated here -->
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="skills-header">
+          <span class="skills-badge">Core Competencies</span>
+          <h2>Technical & Creative Skills</h2>
+          <p class="skills-intro">
+            Combining technical expertise with creative vision to deliver
+            polished, responsive, and engaging gameplay experiences.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- AI & Behavior Systems -->
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">🤖</div>
+              <h3>AI & Behavior Systems</h3>
+              <p class="category-desc">
+                Creating intelligent, responsive, and fair NPC behaviors
+              </p>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Pathfinding & Navigation</span>
+                  <div class="skill-level">
+                    <div class="level-bar" style="width: 92%"></div>
+                  </div>
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">A* Algorithm</span>
+                  <span class="tag">Platformer Pathfinding</span>
+                  <span class="tag">Navigation Meshes</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">AI Architecture</span>
+                  <div class="skill-level">
+                    <div class="level-bar" style="width: 87%"></div>
+                  </div>
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Finite State Machines</span>
+                  <span class="tag">Behavior Trees</span>
+                  <span class="tag">Decision Trees</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Enemy Design</span>
+                  <div class="skill-level">
+                    <div class="level-bar" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Fairness & Telegraphing</span>
+                  <span class="tag">Pattern Recognition</span>
+                  <span class="tag">Challenge Tuning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gameplay Design -->
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">🎮</div>
+              <h3>Gameplay Design</h3>
+              <p class="category-desc">
+                Crafting responsive, satisfying, and balanced player experiences
+              </p>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Player Controllers</span>
+                  <div class="skill-level">
+                    <div class="level-bar" style="width: 95%"></div>
+                  </div>
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Responsive Controls</span>
+                  <span class="tag">Physics Integration</span>
+                  <span class="tag">Animation Blending</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Game Feel</span>
+                  <div class="skill-level">
+                    <div class="level-bar" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Juice & Polish</span>
+                  <span class="tag">Camera Systems</span>
+                  <span class="tag">Input Feedback</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Fair Play Design</span>
+                  <div class="skill-level">
+                    <div class="level-bar" style="width: 88%"></div>
+                  </div>
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Difficulty Balance</span>
+                  <span class="tag">Player Feedback</span>
+                  <span class="tag">Accessibility</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Audio & Creative -->
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">🎵</div>
+              <h3>Audio & Creative</h3>
+              <p class="category-desc">
+                Integrating sound and music as core gameplay elements
+              </p>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Game Music Composition</span>
+                  <div class="skill-level">
+                    <div class="level-bar" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Emotional Scoring</span>
+                  <span class="tag">Genre Adaptation</span>
+                  <span class="tag">Dynamic Systems</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Audio Integration</span>
+                  <div class="skill-level">
+                    <div class="level-bar" style="width: 82%"></div>
+                  </div>
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Interactive Audio</span>
+                  <span class="tag">Loop-based Systems</span>
+                  <span class="tag">Gameplay Feedback</span>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Technical Sound Design</span>
+                  <div class="skill-level">
+                    <div class="level-bar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Middleware (FMOD/Wwise)</span>
+                  <span class="tag">Parameter Control</span>
+                  <span class="tag">Real-time Mixing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collaboration & Soft Skills -->
+          <div class="skill-category full-width">
+            <div class="category-header">
+              <div class="category-icon">🤝</div>
+              <h3>Collaboration & Communication</h3>
+              <p class="category-desc">
+                Effective teamwork and technical communication
+              </p>
+            </div>
+            <div class="skills-list grid-2">
+              <div class="skill-item soft-skill">
+                <div class="skill-icon">💬</div>
+                <div class="skill-content">
+                  <h4>Technical Communication</h4>
+                  <p>
+                    Clear explanation of complex systems to designers and
+                    artists
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item soft-skill">
+                <div class="skill-icon">🔄</div>
+                <div class="skill-content">
+                  <h4>Team Collaboration</h4>
+                  <p>
+                    Experience working in multidisciplinary development teams
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item soft-skill">
+                <div class="skill-icon">📋</div>
+                <div class="skill-content">
+                  <h4>Documentation</h4>
+                  <p>Creating clear technical documentation and guides</p>
+                </div>
+              </div>
+
+              <div class="skill-item soft-skill">
+                <div class="skill-icon">⚡</div>
+                <div class="skill-content">
+                  <h4>Problem Solving</h4>
+                  <p>
+                    Analytical approach to debugging and system optimization
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="recognition">
+        <div class="recognition-header">
+          <span class="recognition-badge">Achievements</span>
+          <h2>Recognition & Participation</h2>
+          <p class="recognition-intro">
+            Active participation in the game development community.
+          </p>
+        </div>
+
+        <div class="recognition-grid">
+          <!-- Game Jam Recognition -->
+          <div class="recognition-card">
+            <div class="recognition-icon">🏆</div>
+            <div class="recognition-content">
+              <h3>Patrimonio Game Jam 2023</h3>
+              <p class="recognition-org">Peruvian Ministry of Culture</p>
+              <p class="recognition-desc">
+                3rd place in a national game jam focused on cultural heritage
+                preservation.
+              </p>
+              <div class="recognition-tags">
+                <span class="tag">National Competition</span>
+                <span class="tag">Cultural Heritage</span>
+                <span class="tag">Rapid Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Jam Participation -->
+          <div class="recognition-card">
+            <div class="recognition-icon">🎮</div>
+            <div class="recognition-content">
+              <h3>Game Jam Participation</h3>
+              <p class="recognition-org">Local Events</p>
+              <p class="recognition-desc">
+                Active participation in multiple local game jams, delivering
+                complete projects within strict time constraints.
+              </p>
+              <div class="recognition-tags">
+                <span class="tag">Rapid Prototyping</span>
+                <span class="tag">Teamwork</span>
+                <span class="tag">Time Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic -->
+          <div class="recognition-card">
+            <div class="recognition-icon">🎓</div>
+            <div class="recognition-content">
+              <h3>Academic Background</h3>
+              <p class="recognition-org">Systems Engineering</p>
+              <p class="recognition-desc">
+                Student at the National University of San Agustín, focused on
+                software architecture and computational systems.
+              </p>
+              <div class="recognition-tags">
+                <span class="tag">Higher Education</span>
+                <span class="tag">Technical Foundations</span>
+                <span class="tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="recognition-card">
+            <div class="recognition-icon">🚀</div>
+            <div class="recognition-content">
+              <h3>Development Experience</h3>
+              <p class="recognition-org">2+ Years of Experience</p>
+              <p class="recognition-desc">
+                I began my journey in game development in 2022, learning
+                independently and working on personal projects.
+              </p>
+              <div class="recognition-tags">
+                <span class="tag">Self-Taught</span>
+                <span class="tag">Gameplay Programming</span>
+                <span class="tag">Continuous Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about-container">
+          <div class="about-profile">
+            <div class="profile-image">
+              <img src="assets/images/me.png" alt="Photo of Night Wish" />
+              <div class="profile-badge">César Garay</div>
+            </div>
+
+            <div class="profile-content">
+              <h2>About Me</h2>
+
+              <div class="about-text">
+                <p>
+                  Hello, I’m <strong>Night Wish</strong>. I am a gameplay
+                  programmer focused on creating fluid, responsive, and fair
+                  player experiences.
+                </p>
+
+                <p>
+                  I am currently studying
+                  <strong>Systems Engineering</strong> at the National
+                  University of San Agustín, while developing indie games for
+                  over two years.
+                </p>
+
+                <p>
+                  My expertise lies in implementing
+                  <strong>intuitive control systems</strong>,
+                  <strong>AI behaviors</strong>, and
+                  <strong>state-driven gameplay</strong>, always prioritizing
+                  clarity and game feel.
+                </p>
+              </div>
+
+              <div class="about-quote">
+                <p>
+                  "I love the art of storytelling through this medium. You have
+                  all the tools to convey what you want and how you want it—the
+                  only limits are yourself and your laptop’s battery."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact-grid">
+          <a href="mailto:coartac.cesar.garay@gmail.com" class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                />
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">coartac.cesar.garay@gmail.com</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/tamalitotactico"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">/tamalitotactico</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/césar-alejandro-garay-bedregal-2674732b6/"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">César Garay</span>
+            </div>
+          </a>
+
+          <a href="#" class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.895 17.611c-.147.105-.332.147-.525.147-.193 0-.378-.042-.525-.147-1.05-.735-2.205-1.155-3.845-1.155-1.64 0-2.795.42-3.845 1.155-.147.105-.332.147-.525.147s-.378-.042-.525-.147c-.315-.221-.473-.588-.42-.955.052-.367.315-.662.63-.882 1.26-.882 2.73-1.365 4.41-1.365 1.68 0 3.15.483 4.41 1.365.315.221.578.515.63.882.052.367-.105.735-.42.955zm.42-5.25c-.315.221-.63.515-.63.882s.315.735.63.955c.147.105.332.147.525.147s.378-.042.525-.147c.315-.221.578-.515.63-.882s-.105-.735-.42-.955c-1.26-.882-2.73-1.365-4.41-1.365s-3.15.483-4.41 1.365c-.315.221-.578.515-.63.882s.105.735.42.955c.147.105.332.147.525.147s.378-.042.525-.147c1.05-.735 2.205-1.155 3.845-1.155 1.64 0 2.795.42 3.845 1.155z"
+                />
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">itch.io</span>
+              <span class="contact-value">Coming Soon</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">© 2024 NightWish. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/music-player.js"></script>
+    <script src="js/video-background.js"></script>
+  </body>
+</html>
